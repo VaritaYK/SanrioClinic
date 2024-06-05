@@ -1,0 +1,286 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+/* Barra superior */
+.top-bar {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+  
+.top-bar .contact-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+  
+.top-bar .contact-info span {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+  
+.top-bar .contact-info span img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+  
+.top-bar .social-icons {
+    display: flex;
+    align-items: center;
+}
+  
+.top-bar .social-icons a {
+    margin-left: 15px;
+}
+  
+.top-bar .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+  
+/* Encabezado */
+header {
+    width: 100%;
+    background: linear-gradient(45deg, #ff8c00, #ff6347, #ffff00);
+    padding: 20px;
+}
+  
+header nav {
+    display: flex;
+    justify-content: center;
+}
+  
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+  
+header nav ul li {
+    margin: 0 20px;
+}
+  
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+  
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+  
+/* Menú de navegación */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+  
+.navbar li {
+    margin: 0 20px;
+}
+  
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+  
+/* Datos de emergencia */
+.emergencia-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(90deg, #ff8c00, #ff6347, #ffff00);
+    clip-path: ellipse(75% 100% at 50% 0%);
+    color: rgb(0, 0, 0);
+}
+.emergencia-section .muñeco-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centrar la imagen horizontalmente */
+}
+  
+.emergencia-section .muñeco {
+    width: 100%;
+    max-width: 500px; /* Ajustar el ancho máximo del muñeco */
+}
+  
+.emergencia-section .text-container {
+    position: absolute; /* Posicionar el contenedor de texto sobre la imagen */
+    bottom: 0; /* Alinear en la parte inferior */
+    width: 100%;
+    max-width: 400px; /* Ajustar el ancho máximo del contenedor de texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Añadir una sombra para un efecto flotante */
+    z-index: 1; /* Asegurarse de que esté por encima de la imagen */
+}
+
+/* Estilos del formulario centrado */
+.emergencia-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Estilos para el formulario */
+.emergencia-form {
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; /* Asegurarse de que esté por encima del muñeco */
+}
+
+/* Estilos del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.phone-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.country-code,
+.phone-number {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.country-code label,
+.phone-number label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="tel"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="tel"]:focus,
+input[type="text"]:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.address-input {
+    display: flex;
+    align-items: center;
+}
+
+.address-input input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.address-input button {
+    background: #007BFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.address-input button img {
+    width: 20px;
+    height: auto;
+}
+
+.address-input button:hover {
+    background: #0056b3;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    background: #e9ecef;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Estilos adicionales para la nueva sección */
+.muñeco-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dialog-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 80%;
+    position: absolute;
+    top:0%;
+    transform: translateY(-50%);
+}
+
+.call-now-button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.call-now-button:hover {
+    background: #0056b3;
+}

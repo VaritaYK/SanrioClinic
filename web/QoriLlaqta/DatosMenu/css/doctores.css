@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 50px;
+    color: #007EA7;
+    width: 100%; /* Ajustar el ancho para ocupar todo el espacio disponible */
+    text-align: center; /* Centrar el texto */
+  }
+  /* Barra superior */
+  .top-bar {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  .top-bar .contact-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .top-bar .contact-info span {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .top-bar .contact-info span img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .top-bar .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-bar .social-icons a {
+    margin-left: 15px;
+  }
+  
+  .top-bar .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Encabezado */
+  header {
+    width: 100%;
+    background: linear-gradient(90deg, #78d5d7 0%, #64b2cd 50%, #519cc2 100%);
+    padding: 20px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transform: scale(1.1);
+    border-radius: 5px;
+  }
+  
+  /* Botón de emergencia */
+  .emergency-button {
+    position: fixed;
+    top: 10%;
+    right: 20px;
+    z-index: 1000;
+    text-align: center;
+    background: linear-gradient(45deg, #ff8c00, #ff6347, #ffff00);
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .emergency-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  /* Menú de navegación */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+/* Doctor-section */
+.doctor-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(90deg, #78d5d7 0%, #64b2cd 50%, #519cc2 100%);
+    clip-path: ellipse(75% 100% at 50% 0%);
+    color: rgb(0, 0, 0);
+}
+.doctor-section .muñeco-container {
+    width: 90%;
+    display: flex;
+    justify-content:left; /* Centrar la imagen horizontalmente */
+}
+  
+.doctor-section .muñeco {
+    width: 100%;
+    max-width: 500px; /* Ajustar el ancho máximo del muñeco */
+}
+  
+.doctor-section .text-container {
+    position: absolute; /* Posicionar el contenedor de texto sobre la imagen */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%);
+    right: 10%; /* Ajustar la posición a la derecha */
+    width: 50%; /* Ajustar el ancho del contenedor de texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Añadir una sombra para un efecto flotante */
+    z-index: 1; /* Asegurarse de que esté por encima de la imagen */
+}
+/* Estilos para la sección de información de los médicos */
+.doctor-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 30px; /* Ajuste el relleno */
+    background-color: #ffffff; /* Color de fondo */
+}
+
+.doctor-info p {
+    font-size: 24px;
+    color: #007EA7;
+    text-align: center;
+    margin: 0; /* Elimine el margen predeterminado */
+    padding: 20px;
+}
+
+.doctor-info ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.doctor-info li {
+    margin-bottom: 10px; /* Ajuste el espaciado entre elementos */
+}
+
+.doctor-info li:last-child {
+    margin-bottom: 0; /* Eliminar el margen inferior del último elemento */
+}
+
+.muñeco-container {
+    width: 40%;
+    text-align: right;
+}
+
+.muñeco {
+    max-width: 100%;
+}

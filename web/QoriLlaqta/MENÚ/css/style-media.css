@@ -1,0 +1,226 @@
+/* Estilos responsivos para la barra superior */
+@media screen and (max-width: 768px) {
+    .top-bar {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      padding: 10px; /* Ajustar el relleno */
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .top-bar .contact-info {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .top-bar .contact-info span {
+      margin-right: 0;
+    }
+  
+    .top-bar .social-icons {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Estilos responsivos para el encabezado */
+  @media screen and (max-width: 768px) {
+    header nav {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      justify-content: center; /* Centrar los elementos */
+    }
+  
+    header nav ul {
+      flex-direction: column; /* Mostrar los elementos en una columna */
+      align-items: center; /* Centrar los elementos */
+    }
+  
+    header nav ul li {
+      margin: 10px 0; /* Ajustar el margen */
+    }
+  
+    header nav ul li a {
+      padding: 10px 16px; /* Ajustar el relleno */
+    }
+  }
+  
+  /* Estilos responsivos para la sección de doctores */
+  @media screen and (max-width: 768px) {
+    .doctor-info {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      padding: 20px; /* Ajustar el relleno */
+    }
+  
+    .doctor-info .muñeco-container {
+      display: none;
+    }
+}
+
+/* Estilos responsivos para la sección de doctores */
+@media screen and (max-width: 768px) {
+    .doctor-carousel {
+      padding: 10px; /* Ajustar el relleno */
+    }
+  
+    .doctor-profile {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+  
+    .doctor-carousel .slick-slide {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+    }
+  }
+  
+ /* Estilos responsivos para las tarjetas */
+@media screen and (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+    
+    .card {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      margin: 10px 0; /* Ajustar el margen */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .welcome-section {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      margin: 0 auto; /* Centrar el welcome section */
+      text-align: center; /* Alinear el texto en el centro */
+      padding: 20px; /* Añadir relleno */
+    }
+  
+    .welcome-section .text-container {
+      width: 100%;
+      margin-top: 20px; /* Añadir margen superior */
+    }
+  
+    .welcome-section .muñeco {
+      max-width: 100%;
+    }
+  }
+    
+  
+  /* Estilos generales para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header h2 {
+      font-size: 30px;
+    }
+  
+    .top-bar {
+      padding: 5px;
+    }
+  
+    .top-bar .contact-info span img,
+    .top-bar .social-icons img {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .emergency-button {
+      top: 5%;
+      right: 10px;
+      width: 60px;
+      height: 60px;
+      padding: 5px;
+    }
+  
+    .emergency-button img {
+      width: 80%;
+    }
+  
+    .hamburger-menu span {
+      width: 20px;
+      height: 2px;
+      margin: 4px;
+    }
+  
+    header nav ul li {
+      margin: 5px 0;
+    }
+  
+    header nav ul li a {
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+
+    .card {
+      padding: 15px;
+    }
+  
+    .doctor-info {
+      padding: 30px 10px;
+    }
+  
+    .doctor-info .muñeco-container img {
+      width: 250px;
+    }
+  
+    .doctor-info h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  
+    .doctor-info p {
+      margin-bottom: 20px;
+    }
+  
+    .doctor-profile img {
+      border-width: 20px;
+    }
+  
+    .more-doctors-button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .consultas {
+      padding: 20px;
+    }
+  
+    .consultas .text-container,
+    .consultas .muñeco-container {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .consultas .button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos responsivos para ocultar el botón de emergencia en dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .emergency-button {
+      display: none;
+    }
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

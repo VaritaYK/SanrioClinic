@@ -1,0 +1,45 @@
+/* Estilos responsivos para la barra superior */
+@media screen and (max-width: 768px) {
+    .top-bar {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      padding: 10px; /* Ajustar el relleno */
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .top-bar .contact-info {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .top-bar .contact-info span {
+      margin-right: 0;
+    }
+  
+    .top-bar .social-icons {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Estilos responsivos para el encabezado */
+  @media screen and (max-width: 768px) {
+    header nav {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      justify-content: center; /* Centrar los elementos */
+    }
+  
+    header nav ul {
+      flex-direction: column; /* Mostrar los elementos en una columna */
+      align-items: center; /* Centrar los elementos */
+    }
+  
+    header nav ul li {
+      margin: 10px 0; /* Ajustar el margen */
+    }
+  
+    header nav ul li a {
+      padding: 10px 16px; /* Ajustar el relleno */
+    }
+  }
+  

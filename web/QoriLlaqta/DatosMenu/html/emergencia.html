@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgencias médicas</title>
+    <link rel="stylesheet" href="../css/emergencia.css">
+    <link rel="stylesheet" href="../css/emergencia-media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/flags.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <span>
+                <img src="img/chat_4233893.png" alt="Chat">
+                064-247087
+            </span>
+            <span>
+                <img src="img/chat_4233893.png" alt="WhatsApp">
+                964 650 418
+            </span>
+            <span><a href="../TrabajaConNosotros/index.html">Trabaja con nosotros</a></span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="img/chat_4233893.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="img/chat_4233893.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="img/chat_4233893.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../MENÚ/index.html">Inicio</a></li>
+                <li><a href="../../FuncionesMenú/BuscarDoctor.html">Contactar doctor</a></li>
+                <li><a href="../../FuncionesMenú/Medicina/BuscarMedicina.html">Comprar medicina</a></li>
+                <li><a href="../../FuncionesMenú/Nosotros/index.html">Nuestros laboratorios</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="emergencia-section">
+        <div class="muñeco-container">
+            <img src="../img/emergencia1.png" alt="muñeco" class="muñeco">
+        </div>
+        <div class="text-container">
+            <h2>Ingresa tus datos</h2>
+            <p>Usaremos tu número de teléfono y dirección para enviar la ambulancia. Recuerda, no te preocupes y manten la calma, estamos contigo.</p>
+        </div>
+    </section>
+    <section class="emergencia-form-wrapper">
+        <div class="muñeco-container">
+            <img src="../img/emergencia2.png" alt="muñeco" class="muñeco">
+            <div class="dialog-box">
+                <p>Si no tienes esta información presiona directamente el botón de llamar ahora que se encuentra en la parte inferior.</p>
+            </div>
+            <button class="call-now-button">Llamar Ahora</button>
+        </div>
+        <div class="emergencia-form">
+            <form>
+                <div class="form-group">
+                    <div class="phone-group">
+                        <div class="country-code">
+                            <label for="country-code">Código de país</label>
+                            <select id="country-code" name="country-code">
+                                <!-- Opciones se cargarán dinámicamente aquí -->
+                            </select>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone">Número de celular</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ingrese su número de teléfono">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección</label>
+                    <div class="address-input">
+                        <input type="text" id="address" name="address" placeholder="Ingrese su dirección">
+                        <button type="button" id="search-address">
+                            <img src="img/search-icon.png" alt="Buscar">
+                        </button>
+                    </div>
+                </div>
+                <div id="map"></div>
+            </form>
+        </div>
+    </section>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="../js/emergencia.js"></script>
+</body>
+</html>

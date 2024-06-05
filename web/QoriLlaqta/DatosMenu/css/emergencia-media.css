@@ -1,0 +1,88 @@
+/* Estilos responsivos para la barra superior */
+@media screen and (max-width: 768px) {
+    .top-bar {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      padding: 10px; /* Ajustar el relleno */
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .top-bar .contact-info {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .top-bar .contact-info span {
+      margin-right: 0;
+    }
+  
+    .top-bar .social-icons {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Estilos responsivos para el encabezado */
+  @media screen and (max-width: 768px) {
+    header nav {
+      width: 100%; /* Ajustar el ancho para ocupar toda la pantalla */
+      justify-content: center; /* Centrar los elementos */
+    }
+  
+    header nav ul {
+      flex-direction: column; /* Mostrar los elementos en una columna */
+      align-items: center; /* Centrar los elementos */
+    }
+  
+    header nav ul li {
+      margin: 10px 0; /* Ajustar el margen */
+    }
+  
+    header nav ul li a {
+      padding: 10px 16px; /* Ajustar el relleno */
+    }
+  }
+  /* Media Queries para hacer la sección responsive */
+@media (max-width: 1200px) {
+    .emergencia-section {
+        padding: 40px;
+    }
+    .emergencia-section .text-container {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    .emergencia-section {
+        padding: 30px;
+    }
+    .emergencia-section .text-container {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .emergencia-section {
+        padding: 20px;
+        clip-path: ellipse(100% 100% at 50% 50%);
+    }
+    .emergencia-section .text-container {
+        max-width: 250px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .emergencia-section {
+        padding: 10px;
+        clip-path: ellipse(100% 100% at 50% 50%);
+    }
+    .emergencia-section .muñeco {
+        max-width: 100%;
+    }
+    .emergencia-section .text-container {
+        font-size: 1px;
+        max-width: 90%;
+        padding: 10px;
+    }
+}

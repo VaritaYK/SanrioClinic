@@ -1,0 +1,428 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 50px;
+  color: #007EA7;
+  width: 100%; /* Ajustar el ancho para ocupar todo el espacio disponible */
+  text-align: center; /* Centrar el texto */
+}
+/* Barra superior */
+.top-bar {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.top-bar .contact-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-bar .contact-info span {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.top-bar .contact-info span img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.top-bar .social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .social-icons a {
+  margin-left: 15px;
+}
+
+.top-bar .social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Encabezado */
+header {
+  width: 100%;
+  background: linear-gradient(90deg, #78d5d7 0%, #64b2cd 50%, #519cc2 100%);
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+/* Botón de emergencia */
+.emergency-button {
+  position: fixed;
+  top: 10%;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+  background: linear-gradient(45deg, #ff8c00, #ff6347, #ffff00);
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+}
+
+.emergency-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Menú de navegación */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+/*Seccion de bienvenida*/
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+  margin-bottom: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 50px;
+}
+
+.welcome-section .muñeco {
+  width: 100%;
+  max-width: 500px; /* Ajustar el ancho máximo del muñeco */
+}
+
+.welcome-section .text-container {
+  width: 50%;
+  max-width: 400px; /* Ajustar el ancho máximo del contenedor de texto */
+  margin-top: 20px; /* Añadir margen superior en pantallas pequeñas */
+  text-align: center; /* Centrar el texto */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(180deg, #78d5d7 0%, #64b2cd 50%, #519cc2 100%);
+  color: #f8f9fa;
+  width: 25%;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 10px;
+}
+
+.card .icon {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+}
+/* Estilos para la sección de doctores */
+.doctor-info {
+  background: #78d5d7;
+  position: relative;
+  padding: 50px 20px; /* Asegurarse de que el padding sea uniforme */
+  text-align: center;
+  margin-bottom: 0; /* Eliminar cualquier margen inferior */
+}
+
+.doctor-info .muñeco-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.doctor-info .muñeco-container img {
+  width: 350px;
+  height: auto;
+}
+
+.doctor-info .muñeco-container img.left {
+  left: 0;
+}
+
+.doctor-info .muñeco-container img.right {
+  right: 0;
+}
+
+.doctor-info h2 {
+  margin-bottom: 20px;
+}
+
+.doctor-info p {
+  margin-bottom: 40px;
+}
+
+/* Listado de doctores */
+.doctor-carousel {
+  background: #78d5d7; /* Asegurar el mismo color de fondo */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+
+  margin: 0; /* Eliminar cualquier margen superior o inferior */
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.doctor-profile {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.doctor-profile img {
+  width: 70%; /* Aumenta el tamaño de la imagen */
+  border-radius: 50%;
+  border: 25px solid #007EA7; 
+}
+
+.doctor-profile h4, .doctor-profile p {
+  margin: 10px 0;
+}
+
+.doctor-profile button:hover {
+  background-color: #0056b3;
+}
+/* Botón "Más doctores" */
+.more-doctors-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Ajustar el margen según sea necesario */
+}
+
+.more-doctors-button {
+  background-color: #007EA7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.more-doctors-button:hover {
+  background-color: #005f7f;
+  transform: scale(1.05);
+}
+/*Consultas*/
+.consultas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 50px;
+}
+
+.consultas .text-container {
+  width: calc(70% - 20px); /* Ajusta el ancho para dejar espacio para el margen */
+  max-width: 500px;
+  margin-top: 20px;
+  text-align: center; 
+}
+
+.consultas .muñeco-container {
+  width: calc(50% - 10px); /* Ajusta el ancho para dejar espacio para el margen */
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.consultas .muñeco {
+  width: 100%;
+}
+
+.consultas .button {
+  display: block;
+  background-color: #007EA7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Estilos para enlaces */
+a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+/* Estilos para encabezados y contenido adicional */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #264653;
+  animation: fadeInDown 1s ease-out;
+}
+
+.additional-content {
+  padding: 0 20px;
+  margin-top: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.additional-content section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #264653;
+  border-radius: 10px;
+  background: #f0f0f0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.additional-content section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.additional-content h3 {
+  color: #264653;
+  margin-bottom: 10px;
+}
+
+.additional-content p {
+  color: #333;
+  line-height: 1.6;
+}
+/* Estilos para el footer */
+footer {
+  background-color: #003249;
+  padding: 30px 0; /* Espaciado interno */
+  margin-top: 50px; /* Espaciado superior */
+  border-top: 1px solid #ced4da; /* Borde superior */
+  display: flex; /* Utilizar flexbox */
+  flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+  justify-content: space-between; /* Distribuir las columnas horizontalmente */
+}
+
+footer .text-body-secondary {
+  color: white; /* Cambiar el color del texto a blanco */
+}
+
+footer .col {
+  flex: 1; /* Que cada columna tome el mismo ancho */
+  margin-bottom: 30px; /* Espaciado inferior entre columnas */
+}
+
+footer h5 {
+  color: #78d5d7; /* Color del título */
+  font-size: 1.25rem; /* Tamaño del título */
+  font-weight: bold; /* Peso del texto */
+  margin-bottom: 15px; /* Espaciado inferior */
+  text-align: center; 
+}
+
+footer ul {
+  list-style-type: none; /* Eliminar viñetas */
+  padding: 0; /* Eliminar relleno */
+  margin: 0; /* Eliminar margen */
+}
+
+footer .nav-link {
+  color: #ffffff; /* Color del enlace */
+  font-size: 0.875rem; /* Tamaño del texto */
+  text-decoration: none; /* Eliminar subrayado */
+}
+
+footer .nav-link:hover {
+  color: #007EA7; /* Cambiar color al pasar el mouse */
+}
